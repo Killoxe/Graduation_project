@@ -1,0 +1,324 @@
+/*---------------------MEDIA-----------------------*/
+/*----800x600----*/
+@media (max-width: 1016px) and (min-width: 769px)
+{
+    /*-------------- Index --------------------*/
+    .infoIndex
+    { min-height: 900px; }
+    .descriptionIndex
+    { margin: 8% auto }
+    .descriptionIndex li
+    { margin: 10px 4%; }
+    /*------ Блок авторизации ------*/
+    /*------ Блок регистрации ------*/
+    .blockRegIndex input.inputText
+    {
+        width: 22vw;
+        min-width: 100px;
+        margin: 10px 0.5vw;
+        padding: 15px 0.5%;
+    }
+    .blockRegIndex .btn
+    { margin: 1%; }
+    .blockRegIndex .btnMini
+    { padding: 10px 1%; }
+    /*-------------- Header mag --------------------*/
+    .footerStore .footer
+    { top: 150px; }
+    .header
+    { height: 150px; }
+    .header > h1
+    { margin-top: 20px; }
+    .panelCos
+    {
+        position: none;
+        top: 60px;
+        right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .panelMenu1
+    {
+        display: block !important;
+        float: none;
+    }
+    .panelMenu1 .hide
+    { display: block !important; }
+    .textMenuMag , .panelMenu2 , .panelMenu1 > li:nth-child(2n) , .panelMenu1 > li:nth-child(3)
+    { display: none; }
+    .panelMenu1 li:first-child
+    {
+        width: 35px;
+        margin-top: 45px;
+    }
+    .panelMenu1 img 
+    {
+        width: 30px;
+        height: 30px;
+    }
+    .subMenu
+    { height: 320px; }
+    .hideMenuMag 
+    {
+        position: relative;
+        top: 0;
+        width: 95%;
+        height: 30px;
+        margin: 20px 25px;
+    }
+    .hideMenuMag li
+    {
+        display: inline-table;
+        margin: 4px 1%;
+    }
+    .searchBarMag
+    {
+        position: relative;
+        top: 10px;
+        right: 0px;
+        float: none;
+        margin: 0;
+    }
+    .catalog
+    {
+        top: -20px;
+        width: 90vw;
+        position: relative;
+        text-align: justify;
+    }
+    /*-------------- _Panel ----------------------------------------------------*/
+    .panelFiltrMag
+    { top: 230px; }
+    
+    .filtrBar
+    {
+        top: 170px;
+        height: 70vh;
+    }
+    .filtrBlok
+    { margin: 20px; }
+
+    .panelStore
+    { top: 150px; }
+
+    /*-------------- ADMIN ----------------------------------------------------*/
+    /*===Шапка===*/
+    .butAdminMenu
+    {
+        top: 48px;
+        left: 320px;
+    }
+    .adminHead .panelMenu1 > li:nth-child(2n), .adminHead .panelMenu1 > li:nth-child(3), .adminHead .panelMenu1 li:first-child
+    {
+        display: inline;
+        margin: 0px 1%;
+    }
+
+
+}
+/*----ipad----*/
+@media (max-width: 768px)
+{
+    /*-------------- Index --------------------*/
+    .headIndex
+    { height: 350px; }
+    .menuHeadIndex
+    { margin: 100px auto; }
+    .infoIndex
+    { min-height: 900px; }
+    .descriptionIndex
+    {
+        margin: 8% auto;
+        width: 400px;
+    }
+    .descriptionIndex li
+    {
+        display: inline;
+        margin: 0;
+    }
+    /*------ Блок авторизации ------*/
+    .blockAvtorIndex
+    { margin: 15px 0; }
+    .blockAvtorIndex .inputText
+    {
+        min-width: 100px;
+        width: 39vw;
+        margin: 30px 1vw;
+        padding: 15px 1%;
+    }
+    /*------ Блок регистрации ------*/
+    .blockRegIndex .inputText
+    {
+        width: 27vw;
+        min-width: 100px;
+        margin: 25px 1vw;
+        padding: 15px 1%;
+    }
+
+    /*------ подвал ------*/
+    .footer
+    { height: 1000px; }
+    .footerStore .footer
+    { top: 100px; }
+    .footer ul
+    {
+        margin: 50px 70px;
+        display: block !important;
+    }
+    .footer ul:nth-child(1)
+    {
+        margin-left: 70px;
+        padding-top: 50px;
+    }
+    .socialNetwork
+    { margin: 80px auto 40px auto; }
+    .footer .horizontalLine
+    { width: 300px; }
+    /*-------------- Header mag --------------------*/
+    .header
+    { height: 150px; }
+    .header > h1
+    { margin-top: 20px; }
+    .panelCos
+    {
+        position: none;
+        top: 60px;
+        right: auto;
+        width: 100%;
+    }
+    .panelMenu1
+    {
+        display: block !important;
+        float: none;
+    }
+    .panelMenu1 .hide
+    { display: block !important; }
+    .textMenuMag , .panelMenu2 , .panelMenu1 > li:nth-child(2n) , .panelMenu1 > li:nth-child(3)
+    { display: none; }
+    .panelMenu1 li:first-child
+    {
+        width: 35px;
+        margin-top: 45px;
+    }
+    .panelMenu1 img 
+    {
+        width: 30px;
+        height: 30px;
+    }
+    .subMenu
+    { height: 370px; }
+    .hideMenuMag
+    {
+        position: relative;
+        top: 0;
+        width: 95%;
+        height: 30px;
+        margin: 20px 25px;
+    }
+    .hideMenuMag li
+    {
+        display: inline-table;
+        margin: 4px 1%;
+    }
+    .searchBarMag
+    {
+        top: 90px;
+        float: none;
+        right: auto;
+        width: 50%;
+        margin: 0 25vw;
+    }
+    .catalog
+    {
+        top: 130px;
+        width: 90%;
+        height: 200px;
+        margin: 0;
+        padding: 20px 5%;
+    }
+    /*-------------- _Panel ----------------------------------------------------*/
+    .panelFiltrMag
+    { top: 230px; }
+    
+    .filtrBar
+    {
+        top: 170px;
+        height: 70vh;
+    }
+    .filtrBlok
+    { margin: 20px; }
+
+
+    .panelStore
+    { top: 150px; }
+}
+
+/*----phone----*/
+@media (max-width: 480px)
+{
+    /*-------------- Index --------------------*/
+    .headIndex
+    {
+        top: 20vh;
+        width: 100%;
+        height: 360px;
+    }
+    .menuHeadIndex .btn
+    {
+        display: block;
+        margin: 10px 20vw;
+        padding: 15px 1%;
+    }
+    .menuHeadIndex
+    { margin: 20px auto; }
+
+    .caption
+    { font-size: 19px; }
+    .infoIndex .caption
+    { padding: 5vh 0 30px 0; }
+    .infoIndex
+    { min-height: 1000px; }
+    .descriptionIndex
+    {
+        margin: 8vw auto;
+        width: 300px;
+    }
+    .descriptionIndex li
+    {
+        display: inline;
+        margin: 0;
+    }
+    /*------ Блок авторизации ------*/
+    #menuIndexAvtor .logo
+    {
+        letter-spacing: 0;
+        font-size: 20px;
+    }
+    .horizontalLine
+    { min-width: 300px; }
+    /*------ Блок регистрации ------*/
+    #menuIndexReg .logo
+    {
+        letter-spacing: 0;
+        font-size: 20px;
+    }
+    .blockRegIndex .inputText
+    {
+        width: 70vw;
+        max-width: 300px;
+        min-width: 100px;
+        margin: 3px 1vw;
+        padding: 10px 1%;
+    }
+    .blockRegIndex
+    { margin: 10px 0; }
+    /*------ подвал ------*/
+    .footer ul
+    {
+        margin: 50px 25px;
+    }
+    .footer ul:nth-child(1)
+    { margin-left: 25px; }
+    .footer .horizontalLine
+    { width: 250px; }
+}

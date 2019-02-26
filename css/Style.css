@@ -1,0 +1,1009 @@
+/*-------------- Общие стили ----------------------------------------------------*/
+/*===скролл===*/
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb{
+    border-width: 1px 1px 1px 2px;
+    border-color: #feee0e;
+    background-color: #f3ab00;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #f3ab00;
+    background-color: #feee0e;
+}
+::-webkit-scrollbar-track
+{ border-width: 0; }
+::-webkit-scrollbar-track:hover
+{  }
+
+html, body
+{
+    font-family: Century Gothic;
+    margin: 0;
+}
+a
+{
+    user-select: none;
+    text-decoration: none;
+}
+h1, h2, h3, h4
+{
+    font-weight: normal;
+    margin: 0;
+    cursor: default;
+}
+ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+input
+{ outline: none; }
+.hide
+{ display: none !important; }/*---скрыть блок---*/
+.logo , .caption/*---логотип и заголовки---*/
+{
+    font-size: 23px;
+    letter-spacing: 12px;
+}
+.yellowI/*---цвет для текста---*/
+{ color: #feee0e; }
+.white
+{ color: #c9b8aa; }
+.gray
+{ color: #675d51; }
+.black
+{ color: #261d15; }
+.inputText/*---поля---*/
+{
+    max-width: 250px;
+    width: 20vw;
+    min-width: 150px;
+    font-family: Century Gothic;
+    font-size: 20px;
+    margin: 10px 1vw;
+    padding: 15px 1%;
+    transition: all 0.4s ease;
+    border: 2px solid #c9b8aa;
+    border-radius: 3px;
+    background: rgba(38, 29, 21, 0.3);
+}
+.inputText:hover
+{
+    border: 2px solid #f3ab00;
+    box-shadow: 0 12px 40px rgba(38, 29, 21, 0.7);
+}
+.inputText:focus
+{ border: 2px solid #f3ab00; }
+.btn/*---кнопки---*/
+{
+    font-family: Century Gothic;
+    font-size: 18px;
+    display: inline;
+    margin: 10px;
+    padding: 20px 1%;
+    transition: all 0.4s ease;
+    border: 2px solid #c9b8aa;
+    border-radius: 3px;
+    background: none;
+}
+.btnMini
+{
+    font-family: Century Gothic;
+    font-size: 16px;
+    padding: 10px 25px;
+    background: none;
+}
+.btn:hover, .btnMini:hover
+{
+    border: 2px solid #f3ab00;
+    box-shadow: 0 12px 40px rgba(38, 29, 21, 0.7);
+}
+a.focusBtn:focus, .btnMini:focus
+{ color: #f3ab00; }
+.horizontalLine/*---горизонтальная линия---*/
+{
+    min-width: 350px;
+    width: 40vw;
+    margin: 0 auto;
+    border: 1px solid #feee0e;
+}
+.illumination/*---подсветка блоков---*/
+{
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(201, 184, 170, 0.3);
+}
+.illumination:hover
+{ box-shadow: 0 0 20px rgba(201, 184, 170, 0.9); }
+.table table/*---общие таблицы---*/
+{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 2px solid #c9b8aa;
+}
+.table th
+{
+    border-bottom: 2px solid #c9b8aa;
+    padding: 10px 15px;
+    text-align: center;
+}
+.table td
+{ padding: 5px; }
+.table tr:nth-child(2n)
+{ background: rgba(38, 29, 21, 0.4); }
+.table tr
+{ transition: all 0.2s ease; }
+.table tr.hoverTR:hover, .hoverTR:hover
+{ background: rgba(254, 238, 14, 0.3); }
+.targetTR
+{ background: rgba(254, 238, 14, 0.5) !important; }
+.character
+{
+    min-width: 400px;
+    max-width: 400px;
+    height: auto;
+    overflow: auto;
+    white-space: nowrap;
+}
+.description
+{
+    white-space: pre-wrap;
+    min-width: 400px;
+    max-width: 400px;
+}
+/*-------------- Index ----------------------------------------------------*/
+.backgroundIndex/*---фон картинка---*/
+{
+    height: 100vh;
+    min-height: 500px;
+    background: url(../img/diz-1.jpg) no-repeat center;
+    background-size: cover;
+}
+.headIndex/*---шапка---*/
+{
+    position: absolute;
+    top: 33vh;
+    width: 100%;
+    height: 250px;
+    background: rgba(38, 29, 21, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.headIndex .logo
+{ padding: 30px 0; }
+.menuHeadIndex/*---меню---*/
+{
+    margin: 55px auto;
+    text-align: center;
+}
+.menuHeadIndex .btn:hover
+{ box-shadow: 0 10px 50px rgba(38, 29, 21, 0.6); }
+/*-------------- Блок авторизации -----------------*/
+.blockAvtorIndex
+{ margin: 25px 0; }
+/*-------------- Блок регистрации -----------------*/
+.blockRegIndex
+{ margin: 25px 0; }
+.footError/*---лист ошибок при регистации и авторизации---*/
+{
+    position: absolute;
+    top: 72vh;
+    width: 100%;
+    background: rgba(38, 29, 21, 0.666);
+}
+.listError
+{
+    text-align: center;
+    margin: 15px 10vw;
+    font-size: 20px;
+}
+.infoIndex/*---информация о магазине---*/
+{
+    min-height: 600px;
+    max-height: 770px;
+    width: 100%;
+    height: 100vh;
+    background: #675d51;
+}
+.infoIndex .caption
+{ padding: 40px 0; }
+.descriptionIndex
+{
+    margin: 12vh auto;
+    width: 95vw;
+}
+.descriptionIndex li
+{
+    display: inline-grid;
+    margin: 0 1.5%;
+    width: 23vw;
+    min-width: 280px;
+    max-width: 400px;
+}
+.descriptionIndex h3
+{
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+.descriptionIndex p
+{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+/*-------------- _Footer ----------------------------------------------------*/
+.footer
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #261d15;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+}
+.footerStore .footer
+{ top: 120px; }
+.footer ul
+{
+    margin: 50px 15px;
+    line-height: 30px;
+    display: inline-table;
+    transition: all 0.4s ease;
+    text-align: left;
+}
+.footer ul:nth-child(1)
+{ margin-left: 50px; }
+.footer .horizontalLine
+{
+    margin: 5px 0 15px 0;
+    min-width: 200px;
+    width: 200px;
+    border: 1px solid #f3ab00;
+}
+.footer a
+{
+    transition: all .4s ease;
+    text-align: left;
+    color: #675d51;
+}
+.footer a:hover, .infoFoot:hover
+{ color: #c9b8aa; }
+.socialNetwork
+{ margin: 40px auto; }
+.socialNetworkVK
+{
+    border-radius: 50px;
+    padding: 10px;
+}
+.socialNetworkVK:hover
+{ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); }
+.infoFoot
+{
+    padding: 5px;
+    letter-spacing: 1.5px;
+    transition: all 0.4s ease;
+}
+/*-------------- _Header ----------------------------------------------------*/
+.header, .adminHead/*---стиль и для админ панели---*/
+{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 120px;
+    background: #c9b8aa;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+}
+.header a
+{
+    color: #675d51;
+    transition: all 0.4s ease;
+}
+.header > h1
+{ margin-top: 33px; }
+.header > h1 > a
+{ font-size: 40px; }
+.panelCos/*---панель для пользователя---*/
+{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 250px;
+    height: 24px;
+    cursor: default;
+    text-align: right;
+}
+.panelCos li
+{
+    display: inline;
+    margin: 0 8px;
+}
+.panelCos img, .panelMenu1 img, .searchBarMag img
+{
+    width: 22px;
+    height: 22px;
+}
+.headerMagMenu/*---меню магазина---*/
+{ margin: -5px 30px; }
+.panelMenu1
+{
+    display: flex;
+    float: left;
+}
+.panelMenu1 li , .panelMenu2 li
+{ margin: -10px 15px; }
+.panelMenu2
+{
+    display: flex;
+    float: right;
+}
+.panelMenu1 a:hover, .panelMenu2 a:hover
+{ color: #261d15; }
+/*===выподающее меню===*/
+.panelMenu1 li:hover .subMenu
+{ transform: scaleY(1); }
+.subMenu
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    -webkit-transition: .5s ease-in-out;
+       -moz-transition: .5s ease-in-out;
+         -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    border-top: 2px solid #feee0e;
+    background: rgba(201, 184, 170, 0.9);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+}
+/*===Строка поиска===*/
+.searchBarMag
+{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    float: right;
+    width: 300px;
+    margin: 0 auto;
+}
+.search
+{
+    font-size: 18px;
+    width: 290px;
+    height: 38px;
+    padding-left: 10px;
+    color: #675d51;
+    border: none;
+    border-bottom: 4px solid #feee0e;
+    border-radius: 5px;
+    outline: none;
+    background: #c9b8aa;
+}
+.goSearch
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    background: #feee0e;
+}
+.goSearch:focus
+{ background: #f3ab00; }
+.catalog
+{
+    position: absolute;
+    top: 0;
+    width: 450px;
+    height: 200px;
+    margin: 20px 25px;
+    text-align: justify ;
+}
+.catalog li
+{
+    display: inline-table;
+    margin: 4px 10px;
+}
+
+.header #menuIndexAvtor, .header #menuIndexReg
+{
+    position: absolute;
+    top: 33vh;
+    width: 100%;
+    height: 250px;
+    background: rgba(38, 29, 21, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.header #menuIndexAvtor .logo, .header #menuIndexReg .logo
+{ padding: 30px 0; }
+.header #menuIndexAvtor a, .header #menuIndexReg a
+{ color: #c9b8aa; }
+/*-------------- Блок авторизации -----------------*/
+.blockAvtorIndex
+{ margin: 25px 0; }
+/*-------------- Блок регистрации -----------------*/
+.blockRegIndex
+{ margin: 25px 0; }
+.header .footError/*---лист ошибок при регистации и авторизации---*/
+{ top: 120px; }
+/*-------------- _Panel ----------------------------------------------------*/
+.panelFiltrMag
+{
+	position: fixed;
+    z-index: 1;
+    top: 200px;
+    left: 0;
+    width: 30px;
+    height: 90px;
+    -webkit-transition: .5s ease-in-out;
+       -moz-transition: .5s ease-in-out;
+         -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+    transform-origin: 0 0;
+    border-radius: 0 5px 5px 0;
+    background: #feee0e;
+}
+.panelFiltrMag img
+{ margin:32px 2.5px; }
+.filtrBar
+{
+    position: fixed;
+    z-index: 1;
+    top: 130px;
+    left: -300px;
+    width: 300px;
+    height: 78vh;
+    -webkit-transition: .5s ease-in-out;
+       -moz-transition: .5s ease-in-out;
+         -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+    transform-origin: 0 0;
+    border-radius: 0 5px 5px 0;
+    background: rgba(201, 184, 170, 0.9);
+    overflow: auto;
+}
+.panelFiltrMag:hover .filtrBar
+{ transform: translateX(300px); }
+.panelFiltrMag:hover
+{ left: 300px; }
+.filtrBlok
+{
+    margin: 20px;
+    font-size: 19px;
+}
+
+.form-control
+{
+    margin-left: 5px;
+    outline: none;
+    border: 2px solid #c9b8aa;
+    padding: 3px;
+}
+.prise input.inputText
+{
+    width: 10px;
+    border: 2px solid #f3ab00;
+    padding: 3px;
+    border-radius: 3px;
+}
+.filtrBlok .btnMini
+{
+    border: 2px solid #675d51;
+    width: 200px;
+}
+.prise .inputText:focus, .form-control:focus, .filtrBlok .btnMini:hover
+{border: 2px solid #feee0e;}
+.checkBox label
+{ font-size: 16px; }
+.checkBox input
+{ margin: 6px; }
+/*-------------- _MagGoods ----------------------------------------------------*/
+.panelStore/*---панель находится в Mag---*/
+{
+    position: relative;
+    width: 100%;
+    top: 120px;
+    background: #675d51;
+}
+.catalogGoodsStore/*---каталог магазина---*/
+{
+    background: #675d51;
+    position: relative;
+    min-height: 350px;
+    padding: 20px;
+}
+.goodsCardsCatalog
+{
+    display: inline-block;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+.goodsCardsCatalog img
+{
+    max-width: 300px;
+    height: 350px;
+    border-radius: 5px 5px 0 0;
+}
+.panelDescription
+{
+    background: #c9b8aa;
+    color: #261d15;
+    height: 92px;
+    max-width: 300px;
+    border-radius: 0 0 5px 5px;
+}
+.descriptionGood
+{ padding: 7px 10px 0px 10px; }
+.panelBuy/*---панель с кнопками покупки и в карзину---*/
+{ padding: 5px 10px 10px 10px; }
+.buyGood, .cartsStore
+{
+    display: inline-block;
+    border: 2px solid #675d51;
+    color: #675d51;
+    width: 123px;
+    height: 20px;
+    padding: 5px;
+    transition: all 0.4s ease;
+}
+.buyGood
+{ border-radius: 0 0 0 8px; }
+.cartsStore
+{ border-radius: 0 0 8px 0; }
+.buyGood:hover, .cartsStore:hover
+{
+    border: 2px solid #f3ab00;
+    color: #261d15;
+    box-shadow: 0 12px 40px rgba(38, 29, 21, 0.7);
+}
+/*-------------- Goods ----------------------------------------------------*/
+.goodsCards/*---карточка товара---*/
+{
+    position: relative;
+    min-height: 1100px;
+}
+.goodsImg/*---фото товара---*/
+{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 60px;
+    left: 3vw;
+}
+.goodsImg img
+{
+    max-width: 550px;
+    width: 35vw;
+    height: 420px;
+    border-radius: 5px;
+}
+/*.panelImgGoods
+{
+    background: #261d15;
+    width: auto;
+    height: 80px;
+    border-radius: 5px;
+    border: 2px solid #feee0e;
+}*/
+.goodsDescriptionPanel/*---панель описание товара---*/
+{
+    position: absolute;
+    max-width: 700px;
+    width: 50vw;
+    min-width: 500px;
+    height: 465px;
+    right: 3vw;
+    top: 40px;
+    border-radius: 10px;
+    border: 2px solid #c9b8aa;
+    text-align: left;
+}
+.goodsDescriptionPanel h2
+{
+    margin: 20px 5vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.goodsDescriptionPanel hr
+{ max-width: 540px; }
+.goodsDescriptionPanel p.pp
+{
+    text-align: left;
+    white-space: pre-line;
+    margin: 20px 5vw;
+    margin-top: 0px;
+    height: 135px;
+    font-size: 15px;
+    overflow: auto;
+}
+.priseGood
+{ margin: 20px 6vw; }
+.quantityGoods
+{
+    position: absolute;
+    top: 90px;
+    left: 195px;
+    margin: 0 80px;
+}
+.quantityGoods .inputText, .quantityInput
+{
+    font-size: 14px;
+    padding: 10px 10px;
+    width: 70px;
+    min-width: 70px;
+    margin: 0;
+}
+.panelBtnGoods
+{ margin: 40px 0 40px 3vw; }
+.goodsDescriptionPanel h3
+{
+    text-align: center;
+    margin: 20px;
+}
+.goodsComment/*---панель с комментариями и тд---*/
+{
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #c9b8aa;
+    width: 96%;
+    height: 500px;
+    top: 550px;
+}
+.menuComment
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: #c9b8aa;
+    border-radius: 5px 5px 0 0;
+}
+.btnPanelOptions, .btnPanelComment, .btnSimilar
+{
+    width: 200px;
+    margin: 1px auto;
+    padding: 11px 8vw;
+}
+.btnPanelOptions
+{ border-radius: 8px 0 0 0; }
+.btnSimilar
+{ border-radius: 0 8px 0 0; }
+.goodsComment h2
+{ margin: 20px auto; }
+.panelComment/*---панель комментариев---*/
+{
+    width: auto;
+    height: 430px;
+    overflow: auto;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    overflow: auto;
+}
+.comment
+{
+    width: 90%;
+    max-height: 150px;
+    border: 1px solid #c9b8aa;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.review, .rating, .nameCus
+{ margin: 5px 20px; }
+.panelOptionsGoods p /*---панель характеристик---*/
+{
+    margin: 30px 50px;
+}
+/*-------------- RoomCos ----------------------------------------------------*/
+.roomCustmer/*---личный кабинет---*/
+{
+    background: #675d51;
+    position: relative;
+    min-height: 500px;
+    height: 80vh;
+    max-height: 800px;
+    padding: 20px;
+}
+.menuRoomCustmer/*---меню---*/
+{
+    position: absolute;
+    background: #c9b8aa;
+    min-height: 450px;
+    max-height: 750px;
+    width: 340px;
+    height: 70vh;
+    border-radius: 5px;
+    margin: 20px 30px;
+}
+.menuRoomCustmer h3
+{ padding: 30px; }
+.menuRoomCustmer .horizontalLine
+{
+    min-width: 290px;
+    width: 280px;
+}
+.menuRoomCustmer ul
+{ display: grid; }
+.menuRoomCustmer li.btn
+{ margin: 5px; }
+.panelRoomCustmer/*---панель вывод данных---*/
+{
+    position: absolute;
+    margin: 20px;
+    width: 65vw;
+    max-width: 1000px;
+    min-height: 450px;
+    max-height: 750px;
+    height: 70vh;
+    left: 410px;
+    border: 2px solid #c9b8aa;
+    border-radius: 5px;
+}
+.panelRoomCustmer h2
+{ margin: 20px auto 10px auto; }
+.dataCustmer/*---личные даннык---*/
+{
+    margin: 30px 60px;
+    text-align: left;
+    line-height: 50px;
+}
+.personalDataCustmer .btnMini
+{
+    position: relative;
+    top: 30px;
+}
+.tableHistoryOrders/*---история заказов---*/
+{
+    overflow: auto;
+    width: auto;
+    height: 57vh;
+    margin: 10px;
+}
+.tableStatusOrders/*---статус заказов---*/
+{
+    overflow: auto;
+    width: auto;
+    height: 57vh;
+    margin: 10px;
+}
+.roomCusForm
+{
+    margin-right: 30%;
+    text-align: right;
+}
+/*-------------- Cart ----------------------------------------------------*/
+.cartStore
+{
+    position: relative;
+    width: 100%;
+    height: 94vh;
+    background: #675d51;
+    padding: 20px 0 20px 0;
+}
+.cartStore h2
+{ margin-bottom: 5px; }
+.cartTable
+{
+    overflow: auto;
+    height: 62vh;
+    margin: 15px;
+    width: 90vw;
+    border-radius: 5px;
+}
+.cartTable td
+{ padding: 15px; }
+.btnOrder
+{ margin-top: 50px; }
+/*-------------- Orders ----------------------------------------------------*/
+.orderStore
+{
+    position: relative;
+    width: 100%;
+    background: #675d51;
+    padding: 20px 0 20px 0;
+}
+.orderTable
+{
+    overflow: auto;
+    height: 53vh;
+    margin: 30px;
+    width: 70vw;
+    border-radius: 5px;
+}
+.orderStore h2
+{ margin-bottom: 5px; }
+.panelOrder
+{
+    margin-top: 30px;
+    width: 90vw;
+}
+.adress, .time, .credit_card_input
+{ text-align: center; }
+.adress input, .time input, .credit_card_input input
+{ padding: 10px; }
+.time input
+{ width: 15px; }
+.panelOrder textarea
+{
+    max-width: 500px;
+    max-height: 50px;
+    min-width: 300px;
+    min-height: 30px;
+    font-size: 17px;
+}
+.btnOrderOff
+{
+    position: relative;
+    top: 10px;
+    margin: 20px 0 50px 0;
+}
+/*------------------  Admin.php  ---------------------------------------------*/
+.adminHead h1
+{
+    text-align: left;
+    margin: 45px 20px 0 20px;
+}
+.adminHead .logo
+{ font-size: 38px; }
+.butAdminMenu
+{
+    position: absolute;
+    top: 58px;
+    left: 350px;
+}
+.butAdminMenu .panelMenu1 li
+{
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+.butAdminMenu .subMenu
+{
+    width: 220px;
+    height: 360px;
+    top: 62px;
+    cursor: default;
+}
+.butAdminMenu .panelMenu1 a
+{ transition: all 0.4s ease; }
+.butAdminMenu .subMenu a
+{
+    margin: 15px 0 0 5px;
+    font-size: 17px;
+    color: #675d51;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+.butAdminMenu .subMenu a:hover, .butAdminMenu .panelMenu1 a:hover, .panelMenu1 li:hover
+{color: #261d15;}
+
+.adminTop/*---топ---*/
+{
+    position: relative;
+    top: 120px;
+    z-index: 0;
+    width: 100%;
+    height: 94vh;
+    background: #675d51;
+    padding: 20px 0 20px 0;
+}
+.avtorAdmin, .regAdmin/*---регистрация, авторизация---*/
+{
+    position: fixed;
+    top: 30vh;
+    width: 100%;
+    height: 250px;
+    background: rgba(38, 29, 21, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.regAdmin
+{ height: 380px; }
+.avtorAdmin .logo h1, .regAdmin .logo h1
+{ margin: 20px; }
+.avtorAdmin .avtorAdminForm, .regAdmin .regAdminForm
+{ margin: 35px; }
+.adminTop .footError
+{ top: 0px; }
+.formNewGoods h2/*---форма для новыйх товаров---*/
+{ padding-bottom: 20px; }
+.newGoodsTable/*---таблица товаров---*/
+{
+    overflow: auto;
+    height: 70vh;
+    margin: 10px;
+    width: 85vw;
+    border-radius: 5px;
+}
+.btnNewGoods
+{ margin: 20px; }
+.panelAddGoods
+{
+    position: fixed;
+    width: 79vw;
+    height: 74vh;
+    top: 21vh;
+    left: 9.5vw;
+    background: rgba(38, 29, 21, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0 0 200px rgba(38, 29, 21, 1);
+    z-index: 10;
+}
+.panelAddGoods .inputText
+{
+    margin: 10px 1vw;
+    padding: 10px 1%;
+}
+.panelAddGoods .inputText:hover, .panelAddGoods .btn:hover
+{ box-shadow: 0 12px 40px rgba(1, 1, 1, 0.7); }
+.panelAddGoods textarea
+{
+    max-width: 500px;
+    min-width: 250px;
+    max-height: 250px;
+    min-height: 25px;
+}
+.formNewGoods .footError
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(38, 29, 21, 0.666);
+}
+.newStatTable table
+{
+    float: left;
+    width: 600px;
+    margin: 10px;
+}
+.panelUpAdd
+{
+    float: right;
+    margin:15px;
+}
+.panelUpAdd hr
+{ width: 400px; }
+.panelUpAdd .inputText
+{
+    margin: 10px 1vw;
+    padding: 10px 1%;
+}
+/*-------------- Блоги ----------------------------------------------------*/
+.panelBlog
+{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #675d51;
+}
+.panelBlog h1
+{
+    padding: 50px 0 20px 0;
+    letter-spacing: 12px;
+}
+.panelBlog h2
+{ padding: 40px 0 0 0; }
+.panelBlog p
+{
+    width: 65vw;
+    text-align: justify;
+    margin: 20px 0;
+}
+.panelBlog p:nth-child(n)
+{
+    margin-left: 7vw;
+    float: left;
+}
+.panelBlog p:nth-child(2n)
+{
+    margin-right: 7vw;
+    float: right;
+}
